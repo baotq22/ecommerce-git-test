@@ -69,6 +69,7 @@ function displayProducts(perListItem) {
 
     console.log("items00113", perListItem);
     console.log("items00333", perListItem);
+    console.log("items002", perListItem);
 
     const baseURL = "../assets/landing-page/"
     // make all item empty
