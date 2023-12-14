@@ -71,6 +71,14 @@ function displayProducts(perListItem) {
     console.log("items00333", perListItem);
     console.log("items002", perListItem);
 
+    console.log("items002234", perListItem);
+    console.log("regegdfgf", perListItem);
+    console.log("items002rtyh", perListItem);
+
+    console.log("items002e5y", perListItem);
+    console.log("hfdhjffdkj", perListItem);
+    console.log("items00267455", perListItem);
+
     const baseURL = "../assets/landing-page/"
     // make all item empty
     $("#products__list").empty();
