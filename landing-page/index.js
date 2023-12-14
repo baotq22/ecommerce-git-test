@@ -67,9 +67,7 @@ $(document).ready(function () {
 function displayProducts(perListItem) {
     console.log(perListItem);
 
-    console.log("items", perListItem);
-
-    console.log("something here", perListItem);
+    console.log("items002", perListItem);
 
     const baseURL = "../assets/landing-page/"
     // make all item empty
