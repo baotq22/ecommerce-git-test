@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../assets/landing-page/ecommerce.webp" type="image/x-icon" />
+    <link rel="stylesheet" href="../library/bootstrap-5.3.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../fonts/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="../styles/css/common.css">
+    <link rel="stylesheet" href="../styles/css/admin.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="admin">
+        <div id="navbar">
+            <div class="container navbar__container">
+                <div class="navbar__logo">
+                    <a href="../landing-page/index.html" class="navbar__link">
+                        <img src="../assets/landing-page/logo.png" alt="">
+                    </a>
+                </div>
+                <div class="navbar__menu">
+                    <ul>
+                        <li>
+                            <a href="../landing-page/index.html" class="navbar__link">
+                                <span><i class="fa-solid fa-home"></i></span>
+                                <span> Home</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../admin/index.html" class="navbar__link">
+                                <span><i class="fa-brands fa-instagram"></i></span>
+                                <span> Admin</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="filters">
+                <input type="text" id="input-search" class="filters__textbox" placeholder="Input product name here">
+                <button id="btn-search" class="btn btn-search">Search</button>
+            </div>
+            
+            <!-- table -->
+    
+            <button class="btn-add-new" id="btn-add-new">Add new product</button>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Product name</th>
+                        <th>Price</th>
+                        <th>Rating point</th>
+                        <th>Sold quantity</th>
+                        <th>% Discount</th>
+                        <th>Special</th>
+                        <th>Images</th>
+                        <th colspan="2">Action</th>
+                    </tr>
+                </thead>
+                <tbody id="display">
+                </tbody>
+            </table>
+            <p id="pagination"></p>
+
+        </div>
+    </div>
+
+    <div id="modal">
+        <div class="modal__body">
+            <h1 class="modal__heading" id="modal__heading">Add new products</h1>
+            <div class="divide"></div>
+            <form action="">
+                <div class="form__container">
+                    <label for="productName">Product Name <span>*</span><span class="error" id="name-error">  </span></label>
+                    <input type="text" placeholder="Input product name" name="productName" id="productName">
+                </div>
+                <div class="form__container">
+                    <label for="productPrice">Product Price <span>*</span><span class="error" id="price-error">  </span></label>
+                    
+                    <input type="number" placeholder="Input product price" name="productPrice" id="productPrice">
+                </div>
+                <div class="form__container">
+                    <label for="productRate">Product Rate <span>*</span><span class="error" id="rate-error">  </span></label>
+                    
+                    <input type="number" placeholder="Input product price" name="productRate" id="productRate">
+                </div>
+                <div class="form__container">
+                    <label for="productQuantity">Sold Quantity <span>*</span><span class="error" id="sold-error">  </span></label>
+                    
+                    <input type="number" placeholder="Input sold price" name="productQuantity" id="productQuantity">
+                </div>
+                <div class="form__container">
+                    <label for="productSale">% Original product discount</label>
+                    <select name="productSale" id="productSale">
+                        <option value="7.5">7.5</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="12">12</option>
+                    </select>
+                </div>
+                <div class="form__container">
+                    <label for="productInstall">Special <span>*</span><span class="error" id="install-error">  </span></label>
+                    <select name="productInstall" id="productInstall">
+                        <option value="">Select</option>
+                        <option value="0">0</option>
+                        <option value="5">5</option>
+                        <option value="7">7</option>
+                    </select>
+                </div>
+                <div class="form__container">
+                    <label for="">Images <span>*</span><span class="error" id="image-error">  </span></label>
+                    <label for="productImage" class="button__upload" id="btn-upload-image">Upload</label>
+                    <input type="file" name="productImage" id="productImage" hidden>
+                    <span id="product-image"></span>
+                </div>
+                <p>
+                    <button class="btn btn-closes" id="btn-closes">Close</button>
+                    <button class="btn btn-reset" id="btn-reset">Reset</button>
+                    <button class="btn btn-submit" id="btn-submit-form">Add</button>
+                </p>
+            </form>
+        </div>
+    </div>
+
+    <div id="popup__close">
+        <div class="close__body">
+            <h1 class="close__heading" id="close__heading">Delete products</h1>
+            <div class="divide"></div>
+            <h5 class="close__content">Are you sure to delete this products?</h5>
+            <p>
+                <button class="btn btn-yes" id="btn-yes">Yes</button>
+                <button class="btn btn-no" id="btn-no">No</button>
+            </p>
+        </div>
+    </div>
+
+    <script src="../library/bootstrap-5.3.0/js/bootstrap.min.js"></script>
+    <script src="../library/jquery_3.7.0.js"></script>
+    <script src="../admin/index.js"></script>
+</body>
+
+</html>

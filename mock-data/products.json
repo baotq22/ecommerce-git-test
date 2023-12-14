@@ -1,0 +1,134 @@
+{
+  "products": [
+    {
+      "name": "Mechanical Keyboard AKKO 5108B Plus クロミ",
+      "price": "2890000",
+      "ratingStar": "5",
+      "quantity": "124",
+      "sale": "7.5",
+      "install": "5",
+      "image": "pr8.jpg",
+      "id": 1
+    },
+    {
+      "name": "Wireless Gaming Mouse Logitech G502 X Plus",
+      "price": "3190000",
+      "ratingStar": "5",
+      "quantity": "45",
+      "sale": "7.5",
+      "install": "7",
+      "image": "pr6.webp",
+      "id": 2
+    },
+    {
+      "name": "Monitor Arm Humanmotion T6 Pro Single",
+      "price": "890000",
+      "ratingStar": "5",
+      "quantity": "3872",
+      "sale": "7.5",
+      "install": "7",
+      "image": "pr3.webp",
+      "id": 3
+    },
+    {
+      "name": "Wireless Gaming Headphone Logitech Lightspeed G435",
+      "price": "1290000",
+      "ratingStar": "5",
+      "quantity": "4236",
+      "sale": "7.5",
+      "install": "5",
+      "image": "pr4.jpg",
+      "id": 4
+    },
+    {
+      "name": "Mechanical Keyboard AKKO 5087B World Tour London",
+      "price": "2590000",
+      "ratingStar": "5",
+      "quantity": "235",
+      "sale": "7.5",
+      "install": "0",
+      "image": "pr1.jpeg",
+      "id": 5
+    },
+    {
+      "name": "Wireless Gaming Mouse Razer Basilisk V3 Hyperspeed",
+      "price": "3450000",
+      "ratingStar": "5",
+      "quantity": "78",
+      "sale": "7.5",
+      "install": "5",
+      "image": "pr5.jpg",
+      "id": 6
+    },
+    {
+      "name": "Monitor Arm Humanmotion T9 Pro II RGB",
+      "price": "2090000",
+      "ratingStar": "5",
+      "quantity": "34",
+      "sale": "7.5",
+      "install": "5",
+      "image": "pr7.webp",
+      "id": 7
+    },
+    {
+      "name": "Switch Akko V3 Cream Blue Pro (kit 45 switchs)",
+      "price": "260000",
+      "ratingStar": "5",
+      "quantity": "567",
+      "sale": "7.5",
+      "install": "0",
+      "image": "pr2.webp",
+      "id": 8
+    },
+    {
+      "name": "Mechanical Keyboard Monsgeek M1W",
+      "price": "1790000",
+      "ratingStar": "5",
+      "quantity": "475",
+      "sale": "7.5",
+      "install": "7",
+      "image": "pr9.webp",
+      "id": 9
+    },
+    {
+      "name": "Pegboard HyperWork PG-02 Standard",
+      "price": "549000",
+      "ratingStar": "5",
+      "quantity": "891",
+      "sale": "7.5",
+      "install": "5",
+      "image": "pr10.webp",
+      "id": 10
+    },
+    {
+      "name": "Monitor Arm Humanmotion T2",
+      "price": "1490000",
+      "ratingStar": "5",
+      "quantity": "123",
+      "sale": "7.5",
+      "install": "5",
+      "image": "pr11.webp",
+      "id": 11
+    },
+    {
+      "name": "Mechanical Keyboard Logitech G913 TKL",
+      "price": "3490000",
+      "ratingStar": "5",
+      "quantity": "89",
+      "sale": "7.5",
+      "install": "5",
+      "image": "pr12.jpg",
+      "id": 12
+    },
+    {
+      "name": "Gaming Mouse Pulsar X2",
+      "price": "2290000",
+      "ratingStar": "5",
+      "quantity": "23",
+      "sale": "7.5",
+      "install": "7",
+      "image": "pr13.webp",
+      "id": 13
+    }
+  ]
+}

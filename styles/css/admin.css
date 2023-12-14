@@ -1,0 +1,282 @@
+.admin #navbar {
+  background-color: #42c2c7;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.admin #navbar .navbar__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.admin #navbar .navbar__container .navbar__logo img {
+  padding: 10px 10px;
+  margin-left: 60px;
+  margin-right: 60px;
+  width: 30%;
+}
+.admin #navbar .navbar__container .navbar__menu ul li {
+  display: inline-flex;
+  align-items: center;
+}
+.admin #navbar .navbar__container .navbar__menu ul li .navbar__link {
+  display: block;
+  font-family: robotoBold, sans-serif;
+  font-size: 17px;
+  padding: 15px;
+}
+.admin #navbar .navbar__container .navbar__menu ul li .navbar__link span:first-child {
+  margin-right: 5px;
+}
+.admin #navbar .navbar__container .navbar__menu ul li .navbar__link:last-child {
+  padding-right: 5px;
+}
+.admin #pagination {
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+}
+.admin #pagination li {
+  list-style: none;
+  border: 1px solid brown;
+  border-radius: 4px;
+  padding: 10px;
+  margin-right: 15px;
+  text-align: center;
+}
+.admin #pagination li:hover {
+  background-color: cadetblue;
+  transition: 0.2s all;
+  cursor: pointer;
+}
+.admin #pagination li.active {
+  background-color: cornflowerblue;
+  transition: 0.2s all;
+  cursor: pointer;
+}
+.admin #pagination li:last-child {
+  margin-right: 0;
+}
+.admin .filters {
+  margin: 50px 0;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.admin .filters .filters__textbox {
+  border: 1px solid rgb(220, 220, 220);
+  width: 550px;
+  display: inline-block;
+  border-radius: 3px;
+  padding: 8px;
+  height: 40px;
+}
+.admin .filters .btn-search {
+  background: #42c2c7;
+  font-family: robotoBold, sans-serif;
+  letter-spacing: 2px;
+}
+.admin .btn-add-new {
+  background: #42c2c7;
+  font-family: robotoBold, sans-serif;
+  border: none;
+  font-size: 14.3px;
+  letter-spacing: 2px;
+  border-radius: 5px;
+  padding: 10px;
+  width: 200px;
+  transition: 0.4s all;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px auto 30px auto;
+}
+.admin table {
+  width: 100%;
+  border-collapse: collapse;
+  transition: 0.4s all;
+}
+.admin table thead tr th,
+.admin table thead tr td,
+.admin table tbody tr th,
+.admin table tbody tr td {
+  border: 1px solid rgb(220, 220, 220);
+  min-width: 50px;
+  text-align: center;
+  padding: 10px;
+}
+.admin table thead tr th #btn-update,
+.admin table thead tr td #btn-update,
+.admin table tbody tr th #btn-update,
+.admin table tbody tr td #btn-update {
+  background: #47c064;
+  font-family: robotoBold, sans-serif;
+  border: none;
+  font-size: 14.3px;
+  letter-spacing: 1px;
+  border-radius: 5px;
+}
+.admin table thead tr th #btn-delete,
+.admin table thead tr td #btn-delete,
+.admin table tbody tr th #btn-delete,
+.admin table tbody tr td #btn-delete {
+  background: #f4191b;
+  font-family: robotoBold, sans-serif;
+  border: none;
+  font-size: 14.3px;
+  letter-spacing: 1px;
+  border-radius: 5px;
+  color: white;
+}
+
+#modal {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.474);
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+  animation-name: fadeIn;
+  animation-duration: 0.4s;
+}
+#modal.active {
+  display: flex;
+}
+#modal .modal__body {
+  background-color: #ffffff;
+  width: 650px;
+  padding: 20px;
+  border-radius: 10px;
+}
+#modal .modal__body .modal__heading {
+  font-size: 20px;
+  font-family: robotoBold, sans-serif;
+}
+#modal .modal__body .divide {
+  height: 1px;
+  background-color: rgba(164, 146, 146, 0.3);
+  margin: 10px 0;
+}
+#modal .modal__body .form__container {
+  margin: 0 0 15px 0;
+}
+#modal .modal__body .form__container label {
+  display: block;
+  font-family: robotoBold, sans-serif;
+}
+#modal .modal__body .form__container label span {
+  color: #f4191b;
+}
+#modal .modal__body .form__container input:not(input[type=file]) {
+  border: 1px solid rgb(220, 220, 220);
+  width: 100%;
+  border-radius: 3px;
+  padding: 8px;
+  height: 35px;
+}
+#modal .modal__body .form__container select {
+  border: 1px solid rgb(220, 220, 220);
+  width: 100%;
+  border-radius: 3px;
+  padding: 8px;
+  height: 35px;
+}
+#modal .modal__body .form__container .error {
+  color: #dd4555;
+  font-family: robotoBold, sans-serif;
+  text-align: left;
+  margin: 5px 0 0 0;
+}
+#modal .modal__body .form__container .button__upload {
+  background: #d0021c;
+  font-family: robotoBold, sans-serif;
+  margin: 0 5px 0 0;
+  color: #ffffff;
+  display: inline-block;
+  width: 100px;
+  text-align: center;
+  border-radius: 10px;
+}
+#modal .modal__body .form__container .button__upload:hover {
+  background: #9d9ba4;
+  color: #000000;
+  transition: 0.4s all;
+}
+#modal .modal__body p {
+  text-align: center;
+  margin: 10px 0 0 0;
+}
+#modal .modal__body p .btn {
+  background: #f4191b;
+  font-family: robotoBold, sans-serif;
+  margin: 0 5px 0 0;
+  color: #ffffff;
+  display: inline-block;
+  width: 100px;
+}
+#modal .modal__body p .btn:nth-child(1) {
+  background: #c1b1b1;
+  color: #000000;
+}
+#modal .modal__body p .btn:nth-child(2) {
+  background: #9d9ba4;
+}
+#modal .modal__body p .btn:nth-child(3) {
+  background: #ffd400;
+}
+
+#popup__close {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.474);
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+#popup__close.active {
+  display: flex;
+}
+#popup__close .close__body {
+  background-color: #ffffff;
+  width: 650px;
+  padding: 20px;
+  border-radius: 10px;
+}
+#popup__close .close__body .close__heading {
+  font-size: 20px;
+  font-family: robotoBold, sans-serif;
+}
+#popup__close .close__body .divide {
+  height: 1px;
+  background-color: rgba(164, 146, 146, 0.3);
+  margin: 10px 0;
+}
+#popup__close .close__body .close__content {
+  margin: 20px 0 20px 0;
+}
+#popup__close .close__body p {
+  text-align: center;
+  margin: 10px 0 0 0;
+}
+#popup__close .close__body p .btn {
+  font-family: robotoBold, sans-serif;
+  margin: 0 5px 0 0;
+  color: #ffffff;
+  display: inline-block;
+  width: 100px;
+}
+#popup__close .close__body p .btn:nth-child(1) {
+  background: #47c064;
+}
+#popup__close .close__body p .btn:nth-child(2) {
+  background: #f4191b;
+  color: #ffffff;
+}
